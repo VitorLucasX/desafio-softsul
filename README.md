@@ -95,3 +95,14 @@ O ambiente de desenvolvimento do backend é gerenciado pelo **Laravel Sail** (Do
     flutter run
     ```
     O aplicativo irá compilar, instalar e iniciar no emulador, conectando-se automaticamente à API local.
+
+    <h2>Prints da aplicação</h2>
+
+    <p>Desktop</p>
+    <img width="1905" height="1020" alt="print da 1" src="https://github.com/user-attachments/assets/1410f59a-9187-49d0-8170-86b1be5ebad8" />
+
+    </br>
+
+    <p>Mobile</p>
+    <img width="453" height="890" alt="print 2" src="https://github.com/user-attachments/assets/f213101f-8465-444d-b52f-85844ad53f5a" />
+
