@@ -36,7 +36,14 @@ O ambiente de desenvolvimento do backend é gerenciado pelo **Laravel Sail** (Do
     cd desafio-softsul
     ```
 
-2.  **Navegue até o backend e inicie o Sail:**
+2.  **Instale as dependências do PHP com o Composer:**
+    *(Este comando usa uma imagem Docker do Composer para instalar as dependências na pasta `vendor/`)*
+    ```bash
+    docker run --rm -v "$(pwd)":/opt -w /opt laravelsail/php82-composer:latest composer install
+    ```
+
+
+3.  **Navegue até o backend e inicie o Sail:**
     *A partir de um terminal WSL2 (Ubuntu):*
     ```bash
     cd backend
@@ -44,7 +51,7 @@ O ambiente de desenvolvimento do backend é gerenciado pelo **Laravel Sail** (Do
     ./vendor/bin/sail up -d
     ```
 
-3.  **Execute os comandos de configuração:**
+4.  **Execute os comandos de configuração:**
     *Aguarde os containers iniciarem completamente e execute:*
     ```bash
     # Gera a chave de segurança da aplicação
@@ -54,9 +61,9 @@ O ambiente de desenvolvimento do backend é gerenciado pelo **Laravel Sail** (Do
     ./vendor/bin/sail artisan migrate
     ```
 
-4.  **Pronto!**
-    -   A aplicação **Web** estará acessível em: `http://localhost:8080`
-    -   A **API** estará acessível em: `http://localhost:8080/api`
+5.  **Pronto!**
+    -   A aplicação **Web** estará acessível em: `http://localhost:8080/pedidos`
+    -   A **API** estará acessível em: `http://localhost:8080/api/pedidos`
 
 ---
 
@@ -74,6 +81,7 @@ O ambiente de desenvolvimento do backend é gerenciado pelo **Laravel Sail** (Do
     *(Pode ser o PowerShell ou CMD do Windows)*
     ```bash
     cd mobile
+    cd softsul_mobile
     ```
 
 3.  **Instale as dependências do Flutter:**
