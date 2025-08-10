@@ -40,6 +40,7 @@ O ambiente de desenvolvimento do backend é gerenciado pelo **Laravel Sail** (Do
     *A partir de um terminal WSL2 (Ubuntu):*
     ```bash
     cd backend
+    cd softsul-final
     ./vendor/bin/sail up -d
     ```
 
